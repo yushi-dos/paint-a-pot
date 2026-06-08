@@ -69,7 +69,7 @@ function Footer({ setPage }) {
               <li><button onClick={() => setPage('home')}>Home</button></li>
               <li><button onClick={() => setPage('classes')}>Classes</button></li>
               <li><button onClick={() => setPage('reservations')}>Book a Table</button></li>
-              <li><a href="#">About Us</a></li>
+              <li><button onClick={() => setPage('howitworks')}>How It Works</button></li>
             </ul>
           </div>
           <div className="col-sm-6 col-lg-2">
@@ -99,7 +99,7 @@ function Footer({ setPage }) {
   );
 }
 
-/* APP ROUTER */
+/* App Router */
 function App() {
   const [page, setPage] = useState('home');
 
@@ -116,10 +116,10 @@ function App() {
     <>
       <Navbar page={pageName} setPage={navigate} />
 
-      {pageName === 'home'         && <Home        setPage={navigate} />}
-      {pageName === 'classes'      && <Services     setPage={navigate} />}
-      {pageName === 'reservations' && <Contact      setPage={navigate} />}
-      {pageName === 'event-detail' && pageEvent     && <Booking event={pageEvent} setPage={navigate} />}
+      {pageName === 'home'&& <Home setPage={navigate} />}
+      {pageName === 'classes'&& <Services setPage={navigate} />}
+      {pageName === 'reservations' && <Contact setPage={navigate} />}
+      {pageName === 'event-detail' && pageEvent && <Booking event={pageEvent} setPage={navigate} />}
 
       <Footer setPage={navigate} />
     </>

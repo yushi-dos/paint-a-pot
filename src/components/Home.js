@@ -24,7 +24,7 @@ function Home({ setPage }) {
       </section>
 
       {/* How it works */}
-      <section className="section-how">
+      <section className="section-how" id="howitworks">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="section-title">How It Works</h2>
