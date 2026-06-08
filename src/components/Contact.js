@@ -63,46 +63,46 @@ function Contact({ setPage }) {
       <div className="res-form-wrap fade-in">
 
         {/* Group Size */}
-        <div style={{ marginBottom: 20 }}>
+        <div>
           <label className="form-label">Group Size</label>
           <div className="guests-row">
             <button className="qty-btn" onClick={() => setGuests(Math.max(1, guests - 1))}>−</button>
             <span className="qty-val">{guests}</span>
             <button className="qty-btn" onClick={() => setGuests(Math.min(20, guests + 1))}>+</button>
-            <span style={{ fontSize: '.87rem', color: '#888' }}>{guests} guest{guests > 1 ? 's' : ''}</span>
+            <span>{guests} guest{guests > 1 ? 's' : ''}</span>
           </div>
         </div>
 
         {/* Name */}
-        <div style={{ marginBottom: 16 }}>
+        <div>
           <label className="form-label">Full Name *</label>
           <input className="form-control" placeholder="Jane Doe" value={name} onChange={e => setName(e.target.value)} />
           {errors.name && <div className="field-err"><i className="bi bi-exclamation-circle me-1"></i>{errors.name}</div>}
         </div>
 
         {/* Email */}
-        <div style={{ marginBottom: 16 }}>
+        <div>
           <label className="form-label">Email Address *</label>
           <input className="form-control" type="email" placeholder="jane@email.com" value={email} onChange={e => setEmail(e.target.value)} />
           {errors.email && <div className="field-err"><i className="bi bi-exclamation-circle me-1"></i>{errors.email}</div>}
         </div>
 
-        {/* Phone */}
-        <div style={{ marginBottom: 20 }}>
+        {/* Phone Number*/}
+        <div>
           <label className="form-label">Phone Number *</label>
           <input className="form-control" type="tel" placeholder="(514) 555-0000" value={phone} onChange={e => setPhone(e.target.value)} />
           {errors.phone && <div className="field-err"><i className="bi bi-exclamation-circle me-1"></i>{errors.phone}</div>}
         </div>
 
         {/* Date */}
-        <div style={{ marginBottom: 20 }}>
+        <div>
           <label className="form-label">Date *</label>
           <input className="form-control" type="date" min={minDateStr} value={date} onChange={e => setDate(e.target.value)} />
           {errors.date && <div className="field-err"><i className="bi bi-exclamation-circle me-1"></i>{errors.date}</div>}
         </div>
 
         {/* Time */}
-        <div style={{ marginBottom: 20 }}>
+        <div>
           <label className="form-label">Time *</label>
           <div className="time-slots">
             {TIME_SLOTS.map(t => (
@@ -113,11 +113,11 @@ function Contact({ setPage }) {
               >{t}</button>
             ))}
           </div>
-          {errors.time && <div className="field-err" style={{ marginTop: 6 }}><i className="bi bi-exclamation-circle me-1"></i>{errors.time}</div>}
+          {errors.time && <div className="field-err"><i className="bi bi-exclamation-circle me-1"></i>{errors.time}</div>}
         </div>
 
         {/* Payment notice */}
-        <div className="pay-notice" style={{ marginBottom: 20 }}>
+        <div className="pay-notice">
           <strong>No payment needed to reserve.</strong>You can pay the day you paint them.
         </div>
 

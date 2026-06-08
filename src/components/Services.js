@@ -14,7 +14,7 @@ function Services({ setPage }) {
         </div>
       </div>
 
-      <section style={{ background: 'var(--cream)', padding: '70px 0' }}>
+      <section className="book-hero" style={{ background: 'var(--cream)', padding: '70px 0' }}>
         <div className="container">
           <div className="row g-4">
             {EVENTS.map(ev => (

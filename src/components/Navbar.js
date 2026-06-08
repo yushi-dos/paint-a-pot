@@ -10,7 +10,7 @@ function Navbar({ page, setPage }) {
           Paint-a-<span>Pot</span>
         </span>
         <button className="navbar-toggler" onClick={() => setOpen(!open)}>
-          <i className={`bi ${open ? 'bi-x' : 'bi-list'} fs-3`} style={{ color: 'var(--navy)' }}></i>
+          <i className={`bi ${open ? 'bi-x' : 'bi-list'} fs-3`} ></i>
         </button>
         <div className={`collapse navbar-collapse ${open ? 'show' : ''}`}>
           <ul className="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0">

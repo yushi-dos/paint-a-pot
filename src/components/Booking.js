@@ -50,13 +50,13 @@ function Booking({ event, setPage }) {
                   <h2>{event.title}</h2>
                   <p className="detail-desc">{event.desc}</p>
 
-                  <h6 style={{ color: 'var(--navy)', fontWeight: 700, fontSize: '.85rem', letterSpacing: '.5px', textTransform: 'uppercase', marginBottom: 10 }}>
+                  <h6>
                     What's Included
                   </h6>
                   <ul className="list-unstyled mb-4">
                     {event.includes.map((item, i) => (
-                      <li key={i} style={{ fontSize: '.89rem', color: '#444', marginBottom: 5 }}>
-                        <i className="bi bi-check2 me-2" style={{ color: 'var(--sky)' }}></i>{item}
+                      <li key={i} >
+                        <i className="bi bi-check2 me-2"></i>{item}
                       </li>
                     ))}
                   </ul>
@@ -65,7 +65,7 @@ function Booking({ event, setPage }) {
                     <div>
                       <div className="price-tag">
                         ${event.price}
-                        <span style={{ fontSize: '1rem', fontWeight: 400, color: '#888' }}>/session</span>
+                        <span>/session</span>
                       </div>
                       <div className="price-note">
                         Pay in person after the class
@@ -89,7 +89,7 @@ function Booking({ event, setPage }) {
                       value={name}
                       onChange={e => setName(e.target.value)}
                     />
-                    {errors.name && <div style={{ color: '#c62828', fontSize: '.8rem', marginTop: 4 }}><i className="bi bi-exclamation-circle me-1"></i>{errors.name}</div>}
+                    {errors.name && <div><i className="bi bi-exclamation-circle me-1"></i>{errors.name}</div>}
                   </div>
                   <div className="col-12">
                     <label className="form-label">Email Address *</label>
@@ -100,7 +100,7 @@ function Booking({ event, setPage }) {
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                     />
-                    {errors.email && <div style={{ color: '#c62828', fontSize: '.8rem', marginTop: 4 }}><i className="bi bi-exclamation-circle me-1"></i>{errors.email}</div>}
+                    {errors.email && <div><i className="bi bi-exclamation-circle me-1"></i>{errors.email}</div>}
                   </div>
                   <div className="col-12">
                     <label className="form-label">Phone Number *</label>
@@ -111,7 +111,7 @@ function Booking({ event, setPage }) {
                       value={phone}
                       onChange={e => setPhone(e.target.value)}
                     />
-                    {errors.phone && <div style={{ color: '#c62828', fontSize: '.8rem', marginTop: 4 }}><i className="bi bi-exclamation-circle me-1"></i>{errors.phone}</div>}
+                    {errors.phone && <div><i className="bi bi-exclamation-circle me-1"></i>{errors.phone}</div>}
                   </div>
                   <div className="col-12">
                     <label className="form-label">Number of Tickets</label>
@@ -119,11 +119,11 @@ function Booking({ event, setPage }) {
                       <button className="qty-btn" onClick={() => setQty(Math.max(1, qty - 1))}>−</button>
                       <span className="qty-val">{qty}</span>
                       <button className="qty-btn" onClick={() => setQty(Math.min(10, qty + 1))}>+</button>
-                      <span style={{ fontSize: '.87rem', color: '#888' }}>${event.price * qty} total</span>
+                      <span>${event.price * qty} total</span>
                     </div>
                   </div>
                   <div className="col-12">
-                    <div style={{ background: '#f0f4fa', borderRadius: 12, padding: '12px 16px', fontSize: '.84rem', color: '#555' }}>
+                    <div>
                       <strong>${event.price * qty} total</strong> pay in person after class.
                     </div>
                   </div>

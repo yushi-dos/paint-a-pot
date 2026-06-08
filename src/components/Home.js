@@ -24,11 +24,11 @@ function Home({ setPage }) {
       </section>
 
       {/* How it works */}
-      <section className="section-how" id="howitworks">
+      <section className="section-how">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="section-title">How It Works</h2>
-            <p className="text-muted mt-3" style={{ maxWidth: 520, margin: '0 auto', fontSize: '.93rem', lineHeight: 1.7 }}>
+            <p className="text-muted mt-3">
               Let's show how easy it is to pottery paint.
             </p>
           </div>
@@ -61,8 +61,8 @@ function Home({ setPage }) {
       <section className="section-events-strip">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="section-title" style={{ color: 'var(--navy)' }}>Workshops & Classes</h2>
-            <p className="text-muted mt-3" style={{ maxWidth: 480, margin: '0 auto', fontSize: '.92rem', lineHeight: 1.7 }}>
+            <h2 className="section-title">Workshops & Classes</h2>
+            <p className="text-muted mt-3">
               Guided workshops and skill-building classes for all ages.
             </p>
           </div>
@@ -91,7 +91,7 @@ function Home({ setPage }) {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="section-title">What Our Community Has Created</h2>
-            <p className="text-muted mt-3" style={{ maxWidth: 480, margin: '0 auto', fontSize: '.92rem', lineHeight: 1.7 }}>
+            <p className="text-muted mt-3">
               Every piece is a reflection of the person who painted it.
             </p>
           </div>
