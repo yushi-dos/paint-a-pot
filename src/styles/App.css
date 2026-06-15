@@ -813,6 +813,7 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
 .ticket-total{
   font-size:.87rem;
   color:#888;
+  margin-left: auto;
 }
 .booking-info-box{
   background:#f0f4fa;
@@ -822,6 +823,7 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
   color:#555;
 }
 .booking-info-box i{color:var(--sky);}
+.booking-info-box strong{color:var(--navy);}
 
 /* ── Service ── */
 .services-section{background:var(--cream);padding:70px 0 90px;}

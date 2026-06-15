@@ -53,7 +53,7 @@ function Booking({ event, setPage }) {
                   <h6>
                     What's Included
                   </h6>
-                  <ul className="list-unstyled mb-4">
+                  <ul className="included-list">
                     {event.includes.map((item, i) => (
                       <li key={i} >
                         <i className="bi bi-check2 me-2"></i>{item}
@@ -119,11 +119,11 @@ function Booking({ event, setPage }) {
                       <button className="qty-btn" onClick={() => setQty(Math.max(1, qty - 1))}>−</button>
                       <span className="qty-val">{qty}</span>
                       <button className="qty-btn" onClick={() => setQty(Math.min(10, qty + 1))}>+</button>
-                      <span>${event.price * qty} total</span>
+                      <span className="ticket-total">${event.price * qty} total</span>
                     </div>
                   </div>
                   <div className="col-12">
-                    <div>
+                    <div className="booking-info-box">
                       <strong>${event.price * qty} total</strong> pay in person after class.
                     </div>
                   </div>

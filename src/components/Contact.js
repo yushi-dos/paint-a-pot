@@ -69,7 +69,6 @@ function Contact({ setPage }) {
             <button className="qty-btn" onClick={() => setGuests(Math.max(1, guests - 1))}>−</button>
             <span className="qty-val">{guests}</span>
             <button className="qty-btn" onClick={() => setGuests(Math.min(20, guests + 1))}>+</button>
-            <span>{guests} guest{guests > 1 ? 's' : ''}</span>
           </div>
         </div>
 
