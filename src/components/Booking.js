@@ -50,14 +50,12 @@ function Booking({ event, setPage }) {
                   <h2>{event.title}</h2>
                   <p className="detail-desc">{event.desc}</p>
 
-                  <h6>
+                  <h6 className='includes-heading'>
                     What's Included
                   </h6>
-                  <ul className="included-list">
+                  <ul className='includes-list'>
                     {event.includes.map((item, i) => (
-                      <li key={i} >
-                        <i className="bi bi-check2 me-2"></i>{item}
-                      </li>
+                      <li key={i} >{item}</li>
                     ))}
                   </ul>
 
@@ -66,9 +64,6 @@ function Booking({ event, setPage }) {
                       <div className="price-tag">
                         ${event.price}
                         <span>/session</span>
-                      </div>
-                      <div className="price-note">
-                        Pay in person after the class
                       </div>
                     </div>
                   </div>
@@ -119,7 +114,6 @@ function Booking({ event, setPage }) {
                       <button className="qty-btn" onClick={() => setQty(Math.max(1, qty - 1))}>−</button>
                       <span className="qty-val">{qty}</span>
                       <button className="qty-btn" onClick={() => setQty(Math.min(10, qty + 1))}>+</button>
-                      <span className="ticket-total">${event.price * qty} total</span>
                     </div>
                   </div>
                   <div className="col-12">

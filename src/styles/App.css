@@ -742,9 +742,7 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
 }
 .detail-desc{
   color:#444;
-  font-size:.95rem;
-  line-height:1.75;
-  margin-bottom:20px;
+  font-size:17px;
 }
 .includes-heading{
   color:var(--navy);
@@ -754,15 +752,14 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
   text-transform:uppercase;
   margin-bottom:10px;
 }
-.includes-list{
+/*.includes-list{
   list-style:none;
   padding:0;
   margin-bottom:1.5rem;
-}
+}*/
 .includes-list li{
-  font-size:.89rem;
+  font-size:17px;
   color:#444;
-  margin-bottom:5px;
 }
 .includes-list li i{
   color:var(--sky);
@@ -813,7 +810,6 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
 .ticket-total{
   font-size:.87rem;
   color:#888;
-  margin-left: auto;
 }
 .booking-info-box{
   background:#f0f4fa;
@@ -823,7 +819,6 @@ h1,h2,h3,h4,h5,h6{font-family:'DM Sans',sans-serif;}
   color:#555;
 }
 .booking-info-box i{color:var(--sky);}
-.booking-info-box strong{color:var(--navy);}
 
 /* ── Service ── */
 .services-section{background:var(--cream);padding:70px 0 90px;}
